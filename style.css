@@ -62,7 +62,7 @@ ul {
 
 .container {
 
-    width: min(1100px, 90%);
+    width: min(1300px, 92%);
     margin: auto;
 
 }
@@ -325,6 +325,96 @@ section {
 
 }
 
+/* ===============================================
+   Portfolio Gallery
+   =============================================== */
+
+.featured-project img {
+
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+
+}
+
+.gallery {
+
+    padding: 80px 0;
+
+}
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
+    gap: 30px;
+
+    align-items: start;
+
+}
+
+.gallery-item {
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition: .3s ease;
+
+}
+
+.gallery-item:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.gallery-item img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    transition: transform .35s ease;
+
+}
+
+.gallery-item:hover img {
+
+    transform: scale(1.03);
+
+}
+
+.gallery-info {
+
+    padding: 20px;
+
+}
+
+.gallery-info h3 {
+
+    color: var(--primary);
+
+    margin-bottom: 8px;
+
+}
+
+.gallery-info p {
+
+    color: var(--gray);
+
+}
+
 /* ---------- CTA ---------- */
 
 .cta {
@@ -462,6 +552,12 @@ footer p {
         flex-direction: column;
 
         gap: 12px;
+
+    }
+
+    .gallery-grid {
+
+        grid-template-columns: 1fr;
 
     }
 
